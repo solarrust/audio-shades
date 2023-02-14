@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100vh;
+}
+
+body {
+  font-family: Helvetica, arial, sans-serif;
+	font-size: 18px;
+	background-color: #18191c;
+}
+
+.container {
+	position: absolute;
+	inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.button {
+	position: fixed;
+	top: 2vh;
+	display: block;
+  min-width: 210px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 9px 15px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: inherit;
+	background-color: #2E9AFF;
+  transition: background-color 0.2s linear;
+	cursor: pointer;
+}
+
+.button:hover {
+  background-color: #FFFFFF;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.button:focus-visible {
+  border: 2px solid #FFFFFF;
+  outline: none;
+}
+
+.button:focus {
+  border: 2px solid #FFFFFF;
+  outline: none;
+}
